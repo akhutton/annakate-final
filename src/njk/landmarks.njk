@@ -1,0 +1,28 @@
+{% extends '_templates/base.njk' %}
+
+{% block content %}
+<article class="container">
+  <h1>The Iconic Sights of Austin</h1>
+  <p>Intro text here.</p>
+
+    {% for landmarks in austin.landmarks %}
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-6">
+      <img src="img/landmarks/{{ landmarks.image }}" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{ landmarks.name }}</h5>
+        <p class="card-text">{{ landmarks.activities }}</p>
+        <p class="card-text"><small class="text-muted">{{ landmarks.established }}</small></p>
+        <a href=" {{ landmarks.url }} " class="stretched-link">Learn More</a>
+      </div>
+    </div>
+      </div>
+        </div>
+   {% endfor %}
+
+        
+</article>
+{% endblock %}
