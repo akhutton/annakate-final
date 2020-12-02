@@ -18,7 +18,7 @@
     }
     ,
     {
-      "fileId": "1cjDHE8DgYng9C2k5VkAurKmrA3ZF7sMN2U7NitnNm1M",
+      "fileId": "1b_bl98YCxVFkBsw3Lih84hW6aIiY3Ef7B4aoQ4xrgCI",
       "type": "doc",
       "name": "restaurants"
     }
@@ -30,6 +30,13 @@
       "array": "books",
       "slug": "slug",
       "path": "books"
+    },
+    {
+      "template": "bake-landmarks",
+      "data": "austin",
+      "array": "landmarks",
+      "slug": "slug",
+      "path": "landmarks" 
     }
   ]
 }

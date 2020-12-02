@@ -1,0 +1,29 @@
+{% extends '_templates/base.njk' %}
+
+{% set relative_path = "../" %}
+
+{% block page_title %}{{ name }}{% endblock %}
+
+{% block page_description %}{{ headline }} by ICJ Anna Kate{% endblock %}
+
+{% block content %}
+  <article class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="../img/landmarks/{{ image }}" alt="Lady Bird Lake" class="img-fluid mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{ established }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{ location }}</h6>
+            <p class="card-text">{{ activities }}</p>
+            <a href="{{ url }}" class="card-link">Source</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8">
+          <h1>{{ name }}</h1>
+          <p>{{ description | safe }}</p>
+      </div>
+    </div>
+  </article>
+{% endblock %}

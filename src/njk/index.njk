@@ -2,7 +2,7 @@
 
 {% block content %}
 
-{% block page_title %}Howdy Y'all{% endblock %}
+{% block page_title %}{% endblock %}
 
 <div class="container">
   <div class="row">
@@ -10,5 +10,14 @@
   </div>
     <h1>Your Guide to Austin</h1>
     <p>Hempen halter mizzenmast deadlights gaff pillage starboard jack lee Blimey draught. Man-of-war piracy black jack sutler Yellow Jack keel provost overhaul execution dock rigging. Log quarterdeck dead men tell no tales red ensign gibbet grog blossom bilge Nelsons folly code of conduct gunwalls.</p>
+      <h2>Austin Landmarks</h2>
+  <p>This loops through data that came from a Google Sheet example.</p>
+  <hr>
+  {% for name in austin.landmarks %}
+    <h3><a href="landmarks/{{ name.slug }}.html" target="_blank">{{ name.name }}</a></h3>
+    <img src="../img/landmarks/{{ name.imagebw }}" alt="{{ namename }}" class="img-fluid-mb-3">
+    <p>{{ name.address}} {{ name.activities }}</p>
+    <hr>
+  {% endfor %}
 </div>
 {% endblock %}
