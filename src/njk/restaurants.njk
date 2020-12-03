@@ -3,13 +3,13 @@
 {% block content %}
 <article class="container">
   <h1>The Iconic Eats of Austin</h1>
-  <p>Intro text here.</p>
+  <p>Austin has something for everyone when it comes to food. From taco trucks to boozy brunches, the restaurants will never dissapoint. This list includes the hottest spots to wine and dine or the go-to greasy takeout spot for when you want to watch Netflix on the couch for the night.</p>
 
   <div class="row">
     {% for name in restaurants.restaurants %}
     <div class="col-sm-6 col-lg-4">
       <div class="card" >
-        <img src="../img/restaurants/{{ name.image }}" class="card-img-top" alt="{{ name.name }}">
+        <img src="../img/restaurants/{{ name.image }}" class="card-img-top img-fluid" alt="{{ name.name }}">
          <div class="card-body">
           <h5 class="card-title">{{ name.name }}</h5>
           <p class="card-text">{{ name.category }}</p>

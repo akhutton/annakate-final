@@ -71,6 +71,24 @@
       "address": "2400 E Oltorf St #1A, Austin, TX 78741",
       "category": "Pan-Asian",
       "image": "888.jpg"
+    },
+    {
+      "name": "La Flor",
+      "address": "4901 S 1st St, Austin, TX 78745",
+      "category": "Breakfast Tacos",
+      "image": "laflor.jpg"
+    },
+    {
+      "name": "Thai Fresh",
+      "address": "909 W Mary St, Austin, TX 78704",
+      "category": "Thai",
+      "image": "thaifresh.jpg"
+    },
+    {
+      "name": "Phoebe’s Diner",
+      "address": "533 W Oltorf St, Austin, TX 78704",
+      "category": "Breakfast",
+      "image": "phoebesdiner.jpg"
     }
   ]
 }

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
   <a class="navbar-brand" href="{{ relative_path }}index.html">Welcome to ATX</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -9,16 +9,8 @@
          <a class="nav-link" href="{{ relative_path }}restaurants.html">Restaurants</a>
       </li>
       <li class="nav-item">
-         <a class="nav-link" href="{{ relative_path }}index-example.html">Index</a>
+         <a class="nav-link" href="{{ relative_path }}activities.html">Activities</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Library books
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          {% for book in library.books %}
-          <a class="dropdown-item" href="{{ relative_path }}books/{{ book.slug}}.html">{{ book.title }}</a>
-          {% endfor %}
         </div>
       </li>
     </ul>

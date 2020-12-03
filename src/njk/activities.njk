@@ -1,0 +1,19 @@
+{% extends '_templates/base.njk' %}
+
+{% block page_title %}Index page title{% endblock %}
+
+{% block page_description %}The index search description for this page goes here.{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1>Activities Around Austin</h1>
+  <p>One of the best parts about being in Austin, there's always something going on. This list details where you can find a wild night out, a morning farmer's market, or the iconic Bat Bridge. Live like the locals do and say howdy to your neighbors at one of these many fun events. </p>
+  <h2>Austin's Latest</h2>
+  <hr>
+  {% for activity in austin.activities %}
+    <h3><a href="{{ activity.url }}" target="_blank">{{ activity.activity }}</a></h3>
+    <p>{{ activity.date_time }}, {{ activity.address}}</p>
+    <hr>
+  {% endfor %}
+</div>
+{% endblock %}

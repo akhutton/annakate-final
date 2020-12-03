@@ -9,13 +9,13 @@
     <col>
   </div>
     <h1>Your Guide to Austin</h1>
-    <p>Hempen halter mizzenmast deadlights gaff pillage starboard jack lee Blimey draught. Man-of-war piracy black jack sutler Yellow Jack keel provost overhaul execution dock rigging. Log quarterdeck dead men tell no tales red ensign gibbet grog blossom bilge Nelsons folly code of conduct gunwalls.</p>
+    <p>Whether you're coming for a weekend trip or one of the many moving here, we're here to give to the highlights of the views, events, and food that Austin has to offer. Soak up the Texan sun, dip your toes in Barton Springs, and relax while we plan your trip for you.  </p>
       <h2>Austin Landmarks</h2>
-  <p>This loops through data that came from a Google Sheet example.</p>
+  <p>You can't miss these iconic views of Austin.</p>
   <hr>
   {% for name in austin.landmarks %}
     <h3><a href="landmarks/{{ name.slug }}.html" target="_blank">{{ name.name }}</a></h3>
-    <img src="../img/landmarks/{{ name.imagebw }}" alt="{{ namename }}" class="img-fluid-mb-3">
+    <img src="../img/landmarks/{{ name.imagebw }}" class="img-fluid" alt="{{ namename }}" class="img-fluid-mb-3">
     <p>{{ name.address}} {{ name.activities }}</p>
     <hr>
   {% endfor %}
