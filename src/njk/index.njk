@@ -5,19 +5,25 @@
 {% block page_title %}{% endblock %}
 
 <div class="container">
-  <div class="row">
-    <col>
+<div class="row">
+  <div class="col">
+    <h1> Your Guide to Austin </h1>
+      <p>Whether you're coming for a weekend trip or one of the many moving here, we're here to give to the highlights of the views, events, and food that Austin has to offer. Soak up the Texan sun, dip your toes in Barton Springs, and relax while we plan your trip for you.  </p>
+      <h3>Austin Landmarks</h2>
+      <p>You can't miss these iconic views of Austin.</p>
+    </div>
   </div>
-    <h1>Your Guide to Austin</h1>
-    <p>Whether you're coming for a weekend trip or one of the many moving here, we're here to give to the highlights of the views, events, and food that Austin has to offer. Soak up the Texan sun, dip your toes in Barton Springs, and relax while we plan your trip for you.  </p>
-      <h2>Austin Landmarks</h2>
-  <p>You can't miss these iconic views of Austin.</p>
+    
   <hr>
+  <div class="row">
   {% for name in austin.landmarks %}
-    <h3><a href="landmarks/{{ name.slug }}.html" target="_blank">{{ name.name }}</a></h3>
-    <img src="../img/landmarks/{{ name.imagebw }}" class="img-fluid" alt="{{ namename }}" class="img-fluid-mb-3">
-    <p>{{ name.address}} {{ name.activities }}</p>
-    <hr>
+    <div class="col-md-6">
+      <h3><a href="landmarks/{{ name.slug }}.html" >{{ name.name }}</a></h3>
+      <img src="../img/landmarks/{{ name.imagebw }}" class="img-fluid" alt="{{ namename }}" class="img-fluid-mb-3">
+      <p>{{ name.address}} {{ name.activities }}</p>
+      <hr>
+    </div>
   {% endfor %}
+</div>
 </div>
 {% endblock %}
